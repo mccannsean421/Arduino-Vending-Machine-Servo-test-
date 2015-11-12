@@ -40,14 +40,13 @@ void loop() {
     Serial.print("PRESSED");
 
     //rotate servo  
-    for (pos = 0; pos <= 180; pos += 2) { // goes from 0 degrees to 180 degrees
-      // in steps of 1 degree
-      servoOne.write(pos);              // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+    for (pos = 0; pos <= 180; pos += 2) { //from 0 to 180 
+      servoOne.write(pos);                //rotate servo to value of pos
+      delay(15);                          //15ms delay
     }
-    for (pos = 180; pos >= 0; pos -= 2) { // goes from 180 degrees to 0 degrees
-      servoOne.write(pos);              // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+    for (pos = 180; pos >= 0; pos -= 2) { //from 180 to 0 
+      servoOne.write(pos);                //rotate servo to value of pos
+      delay(15);                          //15ms delay
     }   
   }
 
@@ -57,14 +56,14 @@ void loop() {
     Serial.print("PRESSED");
 
     //rotate servo  
-    for (pos = 0; pos <= 180; pos += 2) { // goes from 0 degrees to 180 degrees
+    for (pos = 0; pos <= 180; pos += 2) { //from 0 to 180 
       // in steps of 1 degree
-      servoTwo.write(pos);              // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+      servoTwo.write(pos);                //rotate servo to value of pos
+      delay(15);                          //delay of 15ms
     }
-    for (pos = 180; pos >= 0; pos -= 2) { // goes from 180 degrees to 0 degrees
-      servoTwo.write(pos);              // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+    for (pos = 180; pos >= 0; pos -= 2) { //from 180 to 0
+      servoTwo.write(pos);                //rotate servo to value of pos
+      delay(15);                          //delay of 15ms
     }
   }
 }
